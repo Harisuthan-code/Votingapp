@@ -4,6 +4,13 @@
       "main": "src/voteProject_backend/main.mo",
       "type": "motoko"
     },
+
+    "each_canister" : {
+
+      "main": "src/each_canister/part.mo",
+      "type": "motoko"
+    }, 
+
     "voteProject_frontend": {
       "dependencies": [
         "voteProject_backend"

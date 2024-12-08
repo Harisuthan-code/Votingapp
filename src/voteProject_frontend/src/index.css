@@ -1,0 +1,268 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Header-page {
+  text-align: center;
+  background: linear-gradient(45deg, #36486b, #ffffff); 
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  max-width: 1200px;
+  margin: 30px auto 0;
+}
+
+.title-part h1 {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.mid-page {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.webdao, .propsals-part {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  text-align: left;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #ff6ec7;
+}
+
+p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.Sets {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  gap: 30px;
+}
+
+.create-propsals, .Vote.together, .See.other.Propsals {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  flex: 1;
+  transition: transform 0.3s ease;
+}
+
+.create-propsals:hover, .Vote.together:hover, .See.other.Propsals:hover {
+  transform: translateY(-10px);
+}
+
+i {
+  font-size: 3rem;
+  color: #ff6ec7;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: #ff6ec7;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff9a8b;
+}
+
+/* General Styles */
+.create-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f9;
+}
+
+.create-form {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 700px;
+}
+
+.create-form label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.create-form input[type="text"],
+.create-form input[type="date"],
+.create-form input[type="file"] {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #333;
+}
+
+.create-form input[type="text"]:focus,
+.create-form input[type="date"]:focus,
+.create-form input[type="file"]:focus {
+  border-color: #5f9ea0;
+  outline: none;
+}
+
+.create-form button {
+  background-color: #5f9ea0;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.create-form button:hover {
+  background-color: #46868f;
+}
+
+.create-form input[type="file"] {
+  padding: 8px;
+}
+
+.create-form input[type="file"]::file-selector-button {
+  background-color: #5f9ea0;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.create-form input[type="file"]::file-selector-button:hover {
+  background-color: #46868f;
+}
+
+.Sets a{
+
+  text-decoration: none;
+  color: white;
+}
+
+/* General Styles for Voting Page */
+.votingpage , .show-other {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 10rem;
+  flex-wrap: wrap;
+}
+
+.card{
+
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  padding: 10px 15px;
+  width: 300px;
+}
+.votingpage h1 {
+  font-size: 20px; /* Smaller title */
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px; /* Reduced space */
+}
+
+.votingpage img {
+  max-width: 80%; /* Reduce image size */
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px; /* Reduced space */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.votingpage p {
+  font-size: 14px; /* Smaller text */
+  color: #555;
+  margin-bottom: 8px; /* Reduced space */
+  text-align: center;
+}
+
+.votingpage .btn-vote {
+  display: flex;
+  justify-content: space-around; /* Center buttons */
+  gap: 8px; /* Reduced gap */
+  margin-top: 15px; /* Reduced space */
+  width: 100%;
+  max-width: 300px; /* Limit button width */
+}
+
+.votingpage button {
+  background-color: #5f9ea0;
+  color: white;
+  padding: 8px 15px; /* Reduced padding */
+  border: none;
+  border-radius: 4px;
+  font-size: 14px; /* Smaller button text */
+  cursor: pointer;
+  width: 45%; /* Make buttons more compact */
+  transition: background-color 0.3s;
+}
+
+.votingpage button:hover {
+  background-color: #46868f;
+}
+
+.votingpage button:active {
+  background-color: #39737d;
+}
+
+
+
+@media (max-width: 768px) {
+  .mid-page {
+      flex-direction: column;
+      gap: 30px;
+  }
+
+  .Sets {
+      flex-direction: column;
+      gap: 30px;
+  }
+}

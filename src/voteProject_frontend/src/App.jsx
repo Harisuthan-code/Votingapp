@@ -1,31 +1,28 @@
-import { useState } from 'react';
-import { voteProject_backend } from 'declarations/voteProject_backend';
+import React from 'react';
+import Fontslide from './Font';
+import Create from './create';
+import Vote from './Voting';
+import Other from './Others';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-function App() {
-  const [greeting, setGreeting] = useState('');
 
-  function handleSubmit(event) {
-    event.preventDefault();
-    const name = event.target.elements.name.value;
-    voteProject_backend.greet(name).then((greeting) => {
-      setGreeting(greeting);
-    });
-    return false;
-  }
+function App(){
 
-  return (
-    <main>
-      <img src="/logo2.svg" alt="DFINITY logo" />
-      <br />
-      <br />
-      <form action="#" onSubmit={handleSubmit}>
-        <label htmlFor="name">Enter your name: &nbsp;</label>
-        <input id="name" alt="Name" type="text" />
-        <button type="submit">Click Me!</button>
-      </form>
-      <section id="greeting">{greeting}</section>
-    </main>
-  );
+    return(
+
+
+        <Router>
+            
+            <Routes>
+                <Route path='/' element = {<Fontslide/>}/>
+                <Route path='/createpage' element = {<Create/>}/>
+                <Route path='/votepage' element = {<Vote/>}/>
+                <Route path='/otherPropsals' element = {<Other/>}/>
+
+            </Routes>
+        </Router>
+    )
 }
 
-export default App;
+
+export default App
